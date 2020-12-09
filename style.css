@@ -1,0 +1,225 @@
+.card_div {
+  width: 280px;
+  height: 350px;
+
+  margin: auto;
+  background-color: green;
+  position: relative;
+  transition: transform, filter;
+  transition-duration: 1s, 0.7s;
+
+  top: 150px;
+
+  background: rgb(9, 9, 9);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 9, 9, 1) 0%,
+    rgba(3, 64, 91, 1) 49%,
+    rgba(18, 19, 19, 1) 98%
+  );
+
+  filter: grayscale(100%);
+}
+
+.image {
+  position: relative;
+  right: 40px;
+}
+
+.card_div:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.name_div {
+  width: 100%;
+
+  height: 50px;
+  position: absolute;
+  top: 300px;
+  background-color: tomato;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+h2 {
+  position: absolute;
+  top: -10px;
+  left: 60px;
+}
+
+.card_div:hover .name_div {
+  animation-name: name;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+  animation-duration: 0.8s;
+}
+
+@keyframes name {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.icons {
+  width: 40px;
+
+  height: 150px;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.github {
+  width: 100%;
+  height: 30px;
+
+  color: tomato;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  opacity: 0;
+}
+
+.github_icon:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.facebook_icon:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.utube_icon:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.insta_icon:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.facebook {
+  width: 100%;
+  height: 30px;
+  opacity: 0;
+
+  color: tomato;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.insta {
+  width: 100%;
+  height: 30px;
+  opacity: 0;
+  color: tomato;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.utube {
+  width: 100%;
+  height: 30px;
+  opacity: 0;
+  color: tomato;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.card_div:hover .github {
+  animation-name: name2;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+  animation-duration: 0.6s;
+  perspective: 1000px;
+}
+
+@keyframes name2 {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+
+.card_div:hover .facebook {
+  animation-name: name3;
+  animation-fill-mode: forwards;
+  animation-delay: 0.4s;
+  animation-duration: 0.6s;
+  perspective: 1000px;
+}
+
+@keyframes name3 {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+
+.card_div:hover .insta {
+  animation-name: name4;
+  animation-fill-mode: forwards;
+  animation-delay: 0.6s;
+  animation-duration: 0.6s;
+  perspective: 1000px;
+}
+
+@keyframes name4 {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+
+.card_div:hover .utube {
+  animation-name: name5;
+  animation-fill-mode: forwards;
+  animation-delay: 0.8s;
+  animation-duration: 0.6s;
+  perspective: 1000px;
+}
+
+@keyframes name5 {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
